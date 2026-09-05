@@ -1,7 +1,6 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-// Palitan ang 0x27 kung 0x3F ang address ng iyong LCD
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 struct WordStep {
@@ -70,7 +69,7 @@ const WordStep lyrics[] = {
   { 16880, "from",     8, 1, false },
   { 17200, "me",      13, 1, false },
 
-  // --- PAIR 9 (Kasya na ang buong "thought I'd get") ---
+  // --- PAIR 9 ---
   { 18720, "Oh",       0, 0, true },
   { 18960, "no",       3, 0, false },
   { 19240, "I",        6, 0, false },
@@ -79,7 +78,7 @@ const WordStep lyrics[] = {
   { 20320, "I'd",      8, 1, false },
   { 20500, "get",     12, 1, false },
 
-  // --- PAIR 10 (Inilipat dito ang "this") ---
+  // --- PAIR 10 ---
   { 20740, "this",     0, 0, true },
   { 20980, "close",    5, 0, false },
   { 21300, "to",      11, 0, false },
